@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<center>
+<div class="div4">
+  <h1><center>FORMULARIO </center></h1>
+  <table border="1">
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <th>Titulo</th>
+            <td><input type="text" maxlength="10" size="30"></td>
+          </tr>
+          <tr>
+            <th>Nombre</th>
+            <td><input type="text" maxlength="10" size="30"></td>
+          </tr>
+          <tr>
+            <th>Telefone</th>
+            <td><input type="text" maxlength="10" size="30">(opcional)</td>
+          </tr>
+          <tr>
+            <th>E-mail</th>
+            <td><input type="text" maxlength="10" size="30"></td>
+          </tr>
+          <tr>
+            <th>Site</th>
+            <td><input type="text" maxlength="10" size="30">(opcional)</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <th>Nro de itens</th>
+            <td><input type="number" name="numero" min="1" max="10" step="1">(1-10)</td>
+          </tr>
+          <tr>
+            <th>Tamanho</th>
+            <td><input type="range" min="1" max="10">1m(incrementados em 10cm)</td>
+          </tr>
+          <tr>
+            <th>Fecha</th>
+            <td><input type="date" max="2020-12-12" min="2010-12-16" step="1">(minimo 16 dezembro 2010)</td>
+          </tr>
+          <tr>
+            <th>Hora</th>
+            <td><input type="time" min="00:00" max="23:59" step="1800">(cada 30 min)</td>
+          </tr>
+          <tr>
+            <th>Color</th
+              ><td><input type="color"value="#ff0000">(padrao vermelho)</td>
+            </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+        <td> <center> <b> Pesquisar</b>  <input type="text""10" size="30"><input type="submit" value="Ok " name="ok"> </center></td>
+        <td>
+          <table>
+            <tr>
+              <th>  Progreso</th>
+              <td> <progress value="20" max="100"></progress></td>
+            </tr>
+            <tr>
+              <th> Uso de disco </th>
+              <td><progress value="20" max="60"></progress><progress value="40" max="60"></progress><progress value="100" max="60"></progress></td>
+            </tr>
+          </table>
+        </td>
+      </td>
+    </tr>
+    </table>
+</div>
+</center>
+      <style media="screen">
+        table th{
+          text-align: right;
+        }
+        table{
+          font-family: sans-serif;
+          font-size: 90%
+        }
+        .div4{
+          width: 1300px  ;
+        }
+        progress {
+          background-color: darkred;
+        }
+      </style>
+
+
+</body>
+</html>

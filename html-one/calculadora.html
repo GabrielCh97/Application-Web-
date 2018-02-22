@@ -1,0 +1,266 @@
+<html>
+<HEAD>
+<title>Calculadora</title>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function DOit() {
+
+var userinput = document.calc.input.value;
+
+document.calc.input.value = eval(userinput);
+
+}
+
+function plus() {
+
+document.calc.input.value += '+';
+
+}
+
+function minus() {
+
+document.calc.input.value += '-';
+
+}
+
+function mult() {
+
+document.calc.input.value += '*';
+
+}
+
+function div() {
+
+document.calc.input.value += '/';
+
+}
+
+function decimal() {
+
+document.calc.input.value += '.';
+
+}
+
+function openp() {
+
+document.calc.input.value += '(';
+
+}
+
+function closep() {
+
+document.calc.input.value += ')';
+
+}
+
+function num(x) {
+
+document.calc.input.value += x;
+
+}
+
+function recip() {
+
+document.calc.input.value = 1/(document.calc.input.value);
+
+}
+
+function square() {
+
+document.calc.input.value = (document.calc.input.value)*(document.calc.input.value);
+
+}
+
+function cube() {
+
+document.calc.input.value = (document.calc.input.value)*(document.calc.input.value)*(document.calc.input.value);
+
+}
+
+function pi() {
+
+document.calc.input.value += Math.PI;
+
+}
+
+function plus_or_minus() {
+
+document.calc.input.value *= -1;
+
+}
+
+function percent() {
+
+document.calc.input.value *= .01;
+
+}
+
+function sqrt() {
+
+document.calc.input.value = Math.sqrt(document.calc.input.value);
+
+}
+
+function power() {
+
+var np = prompt("¿Elevado a qué potencia (debe ser un número)?","")
+
+document.calc.input.value = Math.pow(document.calc.input.value, np);
+
+}
+
+function cos() {
+
+document.calc.input.value = Math.cos(document.calc.input.value);
+
+}
+
+function sin() {
+
+document.calc.input.value = Math.sin(document.calc.input.value);
+
+}
+
+function tan() {
+
+document.calc.input.value = Math.tan(document.calc.input.value);
+
+}
+
+function Round() {
+
+document.calc.input.value = parseInt(document.calc.input.value);
+
+}
+
+
+</script>
+
+
+</HEAD>
+<center>
+<div class="divc">
+</b>
+<BODY style="font-family: Verdana">
+<p align="center"><b>Calculadora<p><center>
+
+<p></p>
+
+</center><p>
+
+<FORM NAME="calc">
+
+<div align="center">
+  <center>
+  <TABLE CELLSPACING="7" CELLPADDING="7" BORDER="2" style="border-collapse: collapse" bordercolor="#2da2cd">
+
+<tr>
+
+<td colspan="7"><INPUT SIZE="80%" TYPE="text" NAME="input" class="disp"></td>
+
+</tr>
+<tr>
+  <td><INPUT TYPE="button" VALUE="  ^  " onClick="power()" class="btswhite"></td>
+
+  <td><INPUT TYPE="button" VALUE="  C  " onClick="document.calc.input.value = ''; " class="btswhite"></td>
+
+    <td><INPUT TYPE="button" VALUE="  (   " class="btswhite" onClick="openp()"></td>
+
+    <td><INPUT TYPE="button" NAME="closeprth" Value="   )  " class="btswhite" onClick="closep()">
+
+  <td><INPUT TYPE="button" VALUE="Cos" onClick="cos()" class="btsred"></td>
+
+    <td><INPUT TYPE="button" VALUE="Rnd" onClick="Round()" class="btsred">
+</tr>
+
+<tr>
+
+<td><INPUT TYPE="button" Value="  1  " class="btsblue" onClick="num(1)"></td>
+
+<td><INPUT TYPE="button" VALUE="  2  " class="btsblue" onClick="num(2)"></td>
+
+<td><INPUT TYPE="button" VALUE="  3  " class="btsblue" onClick="num(3)"></td>
+
+
+<td><INPUT TYPE="button" VALUE="  +  " onClick="plus()" class="btswhite"></td>
+
+<td><INPUT TYPE="button" VALUE="sqrt" onClick="sqrt()" class="btsred"></td>
+
+<td><INPUT TYPE="button" VALUE="Sin " onClick="sin()" class="btsred"></td>
+
+</tr>
+
+<tr>
+
+<td><INPUT TYPE="button" Value="  4  " class="btsblue" onClick="num(4)">
+
+<td><INPUT TYPE="button" Value="  5  " class="btsblue" onClick="num(5)">
+
+<td><INPUT TYPE="button" Value="  6  " class="btsblue" onClick="num(6)">
+
+
+<td><INPUT TYPE="button" VALUE="  -   " onClick="minus()" class="btswhite">
+
+<td><INPUT TYPE="button" Value=" 1/x" class="btsred"  onClick="recip()">
+
+<td><INPUT TYPE="button" VALUE="Tan" onClick="tan()" class="btsred">
+
+</tr>
+
+<tr>
+
+<td><INPUT TYPE="button" Value="  7  " class="btsblue" onClick="num(7)">
+
+<td><INPUT TYPE="button" Value="  8  " class="btsblue" onClick="num(8)">
+
+<td><INPUT TYPE="button" Value="  9  " class="btsblue" onClick="num(9)">
+
+<td><INPUT TYPE="button" VALUE="  *   " onClick="mult()" class="btswhite">
+
+<td><input type="button" onClick="square("")">  x<sup>2</sup>
+
+<td><INPUT TYPE="button" VALUE="  % " onClick="percent()" class="btswhite">
+
+
+</tr>
+
+<tr>
+
+<td><INPUT TYPE="button" Value="  0  " class="btsblue" onClick="num(0)">
+
+<td><INPUT TYPE="button" Value="  .   " class="btsblue" onClick="decimal()">
+
+<td><INPUT TYPE="button" VALUE=" +/- " onClick="plus_or_minus()" class="btsblue">
+
+<td><INPUT TYPE="button" VALUE="  /   " onClick="div()" class="btswhite">
+
+<td><input type="button" onClick="cube()">  x<sup>3</sup>
+
+<td><INPUT TYPE="button" VALUE="  =  " onClick="DOit()" class="btsred">
+
+</tr>
+
+</TABLE>
+
+  </center>
+</div>
+
+</TABLE>
+
+</FORM>
+
+
+</div>
+</center>
+<style media="screen">
+.divc{
+  width: 609px;
+  border: 2px solid #4bcf23;
+  padding: 1%;
+}
+</style>
+
+</body>
+</html>

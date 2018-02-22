@@ -1,0 +1,76 @@
+
+/*
+    FUENTES
+
+
+
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Exo', sans-serif;
+
+*/
+
+body{
+    background: #191919;
+    background-attachment: fixed;
+}
+.color{
+  background: rgb(156, 26, 94);
+}
+.minus-padd{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+}
+.fondo{
+  width: 100%;
+  height: 100vh;
+  background: url('../img/fondo.png');
+}
+
+.visible{
+  position: absolute;
+}
+.topper{
+  top:80px;
+
+}
+
+.centrado{
+  position: absolute;
+    /*nos posicionamos en el centro del navegador*/
+    top:50%;
+    left:50%;
+    /*determinamos una anchura*/
+    width:400px;
+    /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+    margin-left:-200px;
+    /*determinamos una altura*/
+    height:300px;
+    /*indicamos que el margen superior, es la mitad de la altura*/
+    margin-top:-150px;
+}
+
+
+  .botones-menu{
+    width: 95%;
+    text-align: left;
+    margin-left: 0.3em;
+    margin-bottom: 3px;
+  }
+
+@media screen and (max-width: 900px) and (min-width: 400px) {
+  .logo{
+    top: 50px;
+  }
+  .botones-menu{
+    width: 100%;
+    margin-left: 150px;
+  }
+}
